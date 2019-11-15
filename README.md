@@ -6,7 +6,7 @@ Note: this procedure generates lineplots with FRET ratio changes over time - if 
 There are two option discussed here. Option 1 uses two channel data; data of the donor (w1: excite donor, detect donor) and data of the sensitized emission (w2: excite donor, detect acceptor).
 Option 2 uses additional data, which is directly excited acceptor (w3: excite acceptor, detect acceptor). Next to this data, correction factors beta and gamma are needed (we verified that alpha and delta are nearly zero). For background and an explanation of the correction factors see: [Rheenen et al 2004](https://doi.org/10.1016/S0006-3495(04)74307-6)
 
-#### General preparations
+### General preparations
 #### Only measure gray values
 * Set the measurements to only measure mean gray values: _Analyze > Set Measurements..._ select _Mean gray value_
 #### Set export options for csv
@@ -47,37 +47,32 @@ Option 2 uses additional data, which is directly excited acceptor (w3: excite ac
 
 #### Plot the result
 * Open the csv file with results from the quantification in [PlotTwist](https://huygens.science.uva.nl/PlotTwist/) by using the "Upload" option
-* Apply normalization in PlotTwist; the most common method is the default in PlotTwist: 'Fold change over baseline (I/I0)'
+* Apply normalization in PlotTwist - the default is 'Fold change over baseline (I/I0)'
 * Note: PlotTwist has the option to exclude data from user selected cells
 
-## Sample data and expected results
+### Sample data and expected results
 * Raw sample data is available in this [folder](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/tree/master/Example-data_raw)
 * The graph of the example data generated with PlotTwist looks like this:
 
 
 ![alt text](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/blob/master/Example-data_processed/PlotTwist-results.png "Output")
 
-# Option 2: cross-talk corrected (Sensitized Emission/Donor) ratio
+# Option 2: corrected (Sensitized Emission/Donor) ratio
 
-## Preparations
+### Preparations
+* Determine the correction factors correction factors beta and gamma (and verify that alpha and delta are nearly zero). For background and an explanation of the correction factors see: [Rheenen et al 2004](https://doi.org/10.1016/S0006-3495(04)74307-6)
 
-* Acquire a donor only image
-* Donor bleedthrough (or beta) is the intensity of the FRET channel (w2) divided by the donor channel (w1)
-* Acquire an acceptor only image
-* Direct acceptor excitation (gamma) is the intensity of the FRET channel (w2) divided by the acceptor channel (w3)
-
-
-### Analysis
+#### Analysis
 * Open the timeseries data from each channel (w1,w2,w3)
 * First, define a ROI that corresponds to background
-* Next, add ROIs that select a single cell (Example ROIs are available in 'Galphai_ROI.csv.zip' - these can be shown in ImageJ by dropping the file on the application bar))
-* Measure intensities by using the multimeasure option for each of the three channels (w1,w2,w3).
-* Copy the data to the enclosed excel file; data_analysis_Galphai.xlsx
+* Next, define and add ROIs for each cell (For the example data set the ROIs are available in 'Galphai_ROI.csv.zip' - these ROIs can be shown in ImageJ by dropping the file on the application bar))
+* Measure intensities by using the multimeasure option for each of the three channels (w1,w2,w3). The data is available [here](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/tree/master/Example-data_processed) for each of the channels as a csv file.
+* Copy the data into the right tabs of the enclosed excel file; data_analysis_Galphai.xlsx
 * The result is a corrected FRET ratio in the last tab; 'NORM FRET(BT corrected)'
 * Note: the correction factors beta and gamma can be adjusted in the tab that is used to correct the sensitized emission: 'YFP-BG-CFPbleed-YFPexc'
 
 
-## Sample data and expected results
+### Sample data and expected results
 * Raw sample data is available in this [folder](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/tree/master/Example-data_raw)
 * Extracted intensity data together with the ROIs and the results of the measurement is available in this [folder](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/tree/master/Example-data_processed)
 * The excel file that can be used to correct the data with the beta and gamma factor is available
