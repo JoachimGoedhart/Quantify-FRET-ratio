@@ -51,7 +51,7 @@ Option 2 uses additional data, which is directly excited acceptor (w3: excite ac
 * Note: PlotTwist has the option to exclude data from user selected cells
 
 ### Sample data and expected results
-* Raw sample data is available in this [folder](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/tree/master/Example-data_raw)
+* Raw example data is available in this [folder](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/tree/master/Example-data_raw)
 * The graph of the example data generated with PlotTwist looks like this:
 
 
@@ -73,7 +73,7 @@ Option 2 uses additional data, which is directly excited acceptor (w3: excite ac
 
 
 ### Sample data and expected results
-* Raw sample data is available in this [folder](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/tree/master/Example-data_raw)
+* Raw example data is available in this [folder](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/tree/master/Example-data_raw)
 * Extracted intensity data together with the ROIs and the results of the measurement is available in this [folder](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/tree/master/Example-data_processed)
 * The excel file that can be used to correct the data with the beta and gamma factor is available
 * The plot is directly shown in the excel file. Alternatively the processed data can be exported as csv and visualized with PlotTwist 
