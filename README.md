@@ -57,6 +57,10 @@ Option 2 uses additional data, which is directly excited acceptor (w3: excite ac
 
 ![alt text](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/blob/master/Example-data_processed/PlotTwist-results.png "Output")
 
+
+[![alt text](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/blob/master/Example-data_processed/PlotTwist-results.png)](https://huygens.science.uva.nl/PlotTwist/ "Redirect to homepage")
+
+
 # Option 2: corrected (Sensitized Emission/Donor) ratio
 
 ### Preparations
