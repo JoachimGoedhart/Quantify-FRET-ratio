@@ -52,11 +52,7 @@ Option 2 uses additional data, which is directly excited acceptor (w3: excite ac
 
 ### Sample data and expected results
 * Raw example data is available in this [folder](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/tree/master/Example-data_raw)
-* The graph of the example data generated with PlotTwist looks like this:
-
-
-![alt text](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/blob/master/Example-data_processed/PlotTwist-results.png "Output")
-
+* The graph of the example data generated with PlotTwist looks like this (click on the image to jump to PlotTwist):
 
 [![alt text](https://github.com/JoachimGoedhart/Quantify-FRET-ratio/blob/master/Example-data_processed/PlotTwist-results.png)](https://huygens.science.uva.nl/PlotTwist/ "Redirect to homepage")
 
